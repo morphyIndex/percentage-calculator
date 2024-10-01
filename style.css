@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --bg-color: #F2F2F2;
+    --box-color: #fff;
+    --navy: #2C3E50;
+}
+
+body{
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Lato", sans-serif;
+}
+
+.container{
+    width: 30%;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--box-color);
+    height: 300px;
+    box-shadow: 0 0 5px var(--navy);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 10px 20px;
+    justify-content: space-around;
+}
+
+h1{
+    font-size: 25px;
+    color: var(--navy)
+}
+
+.icon{
+    margin-left: 10px;
+}
+
+.input{
+    width: 100%;
+}
+
+input{
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: 35px;
+    padding: 0px 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #E7F3FF;
+}
+
+input::placeholder{
+    color: gray;
+    font-weight: bold;
+}
+
+#dropdownOptions{
+    width: 100%;
+    font-weight: 600;
+    height: 35px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    background-color: #E7F3FF;
+}
+
+#button{
+    width: 30%;
+    margin: 0 auto;
+    padding: 5px 10px;
+    background-color: var(--navy);
+    color: white;
+    letter-spacing: 1px;
+    transition: .5s all ease;
+}
+
+#button:hover{
+    color: var(--navy);
+    background-color: white;
+}
+
+#output{
+    color: #333333;
+}
