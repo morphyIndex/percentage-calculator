@@ -26,6 +26,8 @@ button.addEventListener("click", () => {
         profit = inputValue * 0.1
     } else if (selectionValue === 20) {
         profit = inputValue * 0.2
+    } else if (selectionValue === 30){
+        profit = inputValue * 0.3
     } else {
         output.textContent = "Choose a vilid option"
         return
